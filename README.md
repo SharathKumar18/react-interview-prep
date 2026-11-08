@@ -1,5 +1,5 @@
-# Frontend Engineering Playbook
-A practical knowledge base for frontend and mobile engineers preparing for senior-level engineering interviews and building production-grade applications.
+# React and React Native Interview Questions | Frontend Engineering Playbook
+A practical GitHub knowledge base of React and React Native interview questions, coding exercises, and system design practice for senior frontend and mobile engineers.
 
 ## Topics
 
@@ -10,7 +10,7 @@ A practical knowledge base for frontend and mobile engineers preparing for senio
 - **Testing:** Jest, React Native Testing Library, Maestro, and Appium.
 - **AI Engineering:** Agents, MCP, skills, specification-driven development, and AI-assisted testing.
 - **Engineering Practices:** CI/CD, application signing, release management, accessibility, and production debugging.
-- **Interview Preparation:** Coding exercises, system design scenarios, and behavioral questions.
+- **Interview Preparation:** [Coding interview questions](coding-interviews/react-native-exercises.md), [mobile system design questions](system-design/mobile-app-architecture.md), and behavioral questions.
 
 ## Goals
 

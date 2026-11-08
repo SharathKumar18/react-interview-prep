@@ -4,7 +4,7 @@
 
 For each design question, clarify requirements, define the architecture and data flow, explain trade-offs, and cover performance, reliability, accessibility, testing, security, and deployment.
 
-## E-Commerce Mobile App
+## Question 1 — E-Commerce Mobile App (Highest Priority)
 
 Design a React Native app with product listing, search, product details, cart, checkout, and order history.
 
@@ -18,7 +18,20 @@ Cover:
 
 Follow-up: What happens if a user adds an item to the cart offline and then logs in on another device?
 
-## High-Performance Feed
+## Question 2 — Offline-First Mobile App
+
+Design an app that remains useful in a warehouse or an area with poor network connectivity.
+
+Cover:
+- Local persistence with SQLite or Room through a native integration where needed.
+- A repository pattern and a clearly defined source of truth.
+- A pending-operation queue with retries, exponential backoff, and idempotency keys.
+- Conflict resolution when local and server data disagree.
+- Connectivity changes and visible synchronization status.
+
+Follow-up: How do you prevent duplicate transactions when a request times out and is retried?
+
+## Question 3 — High-Performance Feed
 
 Design a feed with thousands of posts, images, video previews, likes, comments, and infinite scrolling.
 
@@ -31,7 +44,15 @@ Cover:
 
 Follow-up: How would you investigate dropped frames during scrolling?
 
-## Real-Time Tracking App
+## Question 4 — Reusable Mobile Component Library
+
+Design a component library used by 20 feature teams across iOS and Android.
+
+Cover design tokens, accessibility, theming, typed component APIs, documentation, semantic versioning, visual regression tests, and backward compatibility.
+
+Follow-up: How would you introduce a breaking change without blocking consuming teams?
+
+## Question 5 — Real-Time Tracking App
 
 Design an app receiving live updates from a backend.
 
@@ -43,16 +64,25 @@ Cover:
 
 Follow-up: How do you keep the UI responsive when updates arrive several times per second?
 
+## Question 6 — Expo Production App
+
+Design an application using Expo Router, EAS Build, EAS Submit, and EAS Update.
+
+Cover file-based routing, native modules and config plugins, environment-specific configuration, signing credentials, CI/CD, staged releases, rollback, and compatibility between JavaScript bundles and native binaries.
+
+Follow-up: What happens if a JavaScript update requires a native module that is absent from the installed binary?
+
 ## Additional System Design Questions
 
 1. Structure a large React Native app using Clean Architecture or feature-based modules.
 2. Choose between Redux Toolkit, Zustand, Context API, and TanStack Query.
-3. Design authentication, refresh tokens, logout, and deep links.
-4. Design universal links to open a specific product or order on iOS and Android.
-5. Design for accessibility AA, including dynamic font sizes, screen readers, contrast, and touch targets.
-6. Split a monolithic React Native app into independently maintained modules.
-7. Design GraphQL caching and pagination, and compare with REST.
-8. Integrate a native SDK while keeping the JavaScript API stable.
+3. Design caching with memory and persistent storage, TTL, stale-while-revalidate, and invalidation.
+4. Design authentication, refresh tokens, logout, and deep links.
+5. Design universal links to open a specific product or order on iOS and Android.
+6. Design for accessibility AA, including dynamic font sizes, screen readers, contrast, and touch targets.
+7. Split a monolithic React Native app into independently maintained modules.
+8. Design GraphQL caching and pagination, and compare with REST.
+9. Integrate a native SDK while keeping the JavaScript API stable.
 
 ## Reference Architecture
 
