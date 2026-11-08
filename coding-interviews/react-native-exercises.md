@@ -68,3 +68,25 @@ Follow-up questions:
 6. Fix a race condition where an older response overwrites a newer response.
 7. Build an accessible reusable modal with Android back-button handling.
 8. Write unit tests for a custom hook using Jest and React Native Testing Library.
+
+## Interview Approach and Raising a PR to Main
+
+For a coding or design prompt, clarify the goal, constraints, and edge cases before choosing an approach. Explain the data flow and important trade-offs, implement the smallest complete solution, and test normal, boundary, and failure cases. For a system-design prompt, state assumptions and scale, sketch the main components, then address reliability, performance, accessibility, and security.
+
+### A Typical PR Workflow
+
+1. Update the local `main` branch and create a focused feature branch from it.
+2. Make the change in small, reviewable commits and run the relevant tests and checks.
+3. Push the feature branch to your fork or repository, depending on the project contribution policy.
+4. Open a pull request with `main` as the base branch. Summarize the problem, solution, test results, and any risks; add screenshots for UI changes.
+5. Wait for required CI checks and review, address feedback, and resolve conflicts by updating the feature branch.
+6. Merge only after required approvals and checks pass, using the repository's merge policy.
+
+### Questions to Rehearse
+
+- How do you approach an unfamiliar coding problem when requirements are incomplete?
+- How do you choose edge cases and demonstrate that your solution is correct?
+- Walk through creating a feature branch and opening a pull request against `main`.
+- What information belongs in a pull request description, and how do you show that it is ready to merge?
+- How do you respond when CI fails, a reviewer requests changes, or the branch conflicts with `main`?
+- When should a change be split into multiple pull requests?
